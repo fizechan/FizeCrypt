@@ -1,13 +1,11 @@
 <?php
-/**
- *  iconv扩展
- * @author FizeChan
- * @version V1.0.0.20170420
- */
 
 namespace fize\crypt;
 
-
+/**
+ * iconv扩展
+ * @package fize\crypt
+ */
 class Iconv
 {
 
@@ -41,13 +39,13 @@ class Iconv
     /**
      * 一次性解码多个 MIME 头字段
      * @param string $encoded_headers 编码过的头，是一个字符串。
-     * @param int $mode 决定了遇到畸形 MIME 头字段时的行为	ICONV_MIME_DECODE_STRICT、ICONV_MIME_DECODE_CONTINUE_ON_ERROR
+     * @param int $mode 决定了遇到畸形 MIME 头字段时的行为    ICONV_MIME_DECODE_STRICT、ICONV_MIME_DECODE_CONTINUE_ON_ERROR
      * @param string $charset 指定编码，如果省略了，将使用 iconv.internal_encoding。
      * @return array
      */
     public static function mimeDecodeHeaders($encoded_headers, $mode = 0, $charset = null)
     {
-        if(is_null($charset)){
+        if (is_null($charset)) {
             return iconv_mime_decode_headers($encoded_headers, $mode);
         }
         return iconv_mime_decode_headers($encoded_headers, $mode, $charset);
@@ -56,13 +54,13 @@ class Iconv
     /**
      * 解码一个MIME头字段
      * @param string $encoded_header 编码头,是一个字符串.
-     * @param int $mode 决定了遇到畸形 MIME 头字段时的行为	ICONV_MIME_DECODE_STRICT、ICONV_MIME_DECODE_CONTINUE_ON_ERROR
+     * @param int $mode 决定了遇到畸形 MIME 头字段时的行为    ICONV_MIME_DECODE_STRICT、ICONV_MIME_DECODE_CONTINUE_ON_ERROR
      * @param string $charset 指定编码，如果省略了，将使用 iconv.internal_encoding。
      * @return string 如果解码成功,返回一个被解码的MIME字段, 如果在解码过程中出现一个错误,将返回FALSE .
      */
     public static function mimeDecode($encoded_header, $mode = 0, $charset = null)
     {
-        if(is_null($charset)){
+        if (is_null($charset)) {
             return iconv_mime_decode($encoded_header, $mode);
         }
         return iconv_mime_decode($encoded_header, $mode, $charset);
@@ -99,7 +97,7 @@ class Iconv
      */
     public static function strlen($str, $charset = null)
     {
-        if(is_null($charset)){
+        if (is_null($charset)) {
             return iconv_strlen($str);
         }
         return iconv_strlen($str, $charset);
@@ -115,7 +113,7 @@ class Iconv
      */
     public static function strpos($haystack, $needle, $offset = 0, $charset = null)
     {
-        if(is_null($charset)){
+        if (is_null($charset)) {
             return iconv_strpos($haystack, $needle, $offset);
         }
         return iconv_strpos($haystack, $needle, $offset, $charset);
@@ -130,7 +128,7 @@ class Iconv
      */
     public static function strrpos($haystack, $needle, $charset = null)
     {
-        if(is_null($charset)){
+        if (is_null($charset)) {
             return iconv_strrpos($haystack, $needle);
         }
         return iconv_strrpos($haystack, $needle, $charset);
@@ -146,10 +144,10 @@ class Iconv
      */
     public static function substr($str, $offset, $length = null, $charset = null)
     {
-        if(is_null($length)){
+        if (is_null($length)) {
             return iconv_substr($str, $offset);
         }
-        if(is_null($charset)){
+        if (is_null($charset)) {
             return iconv_substr($str, $offset, $length);
         }
         return iconv_substr($str, $offset, $length, $charset);

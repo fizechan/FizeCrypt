@@ -1,14 +1,11 @@
 <?php
-/**
- * JSON编码解码类
- * @author FizeChan
- * @version V1.0.0.20170111
- */
-
 
 namespace fize\crypt;
 
-
+/**
+ * JSON编码解码类
+ * @package fize\crypt
+ */
 class Json
 {
 

@@ -1,14 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: cfz87
- * Date: 2018-04-28
- * Time: 14:43
- */
 
 namespace fize\crypt;
 
-
+/**
+ * Enchant类
+ * @todo 市场使用较少，有需要时再开发
+ * @package fize\crypt
+ */
 class Enchant
 {
 

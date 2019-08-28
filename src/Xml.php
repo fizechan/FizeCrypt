@@ -1,16 +1,13 @@
 <?php
-/**
- * XML编码解码类
- *
- * @author Fize Chan
- * @version V1.0.0.20170111
- */
-
 
 namespace fize\crypt;
 
 use SimpleXMLElement;
 
+/**
+ * XML编码解码类
+ * @package fize\crypt
+ */
 class Xml
 {
     /**
@@ -21,7 +18,7 @@ class Xml
         'root_name' => 'root', //根节点名称
         'root_attr' => [], //根节点属性
         'item_name' => 'item', //数字节点转换的名称
-        'item_key' => 'id', //数字节点转换的属性名
+        'item_key'  => 'id', //数字节点转换的属性名
     ];
 
     /**
@@ -33,10 +30,10 @@ class Xml
 
     /**
      * 数据XML编码
-     * @param  SimpleXMLElement $xml xml对象
-     * @param  mixed $data 数据
-     * @param  string $item 数字索引时的节点名称
-     * @param  string $id 数字索引key转换为的属性名
+     * @param SimpleXMLElement $xml xml对象
+     * @param mixed $data 数据
+     * @param string $item 数字索引时的节点名称
+     * @param string $id 数字索引key转换为的属性名
      */
     private static function data2xml(SimpleXMLElement $xml, $data, $item = 'item', $id = 'id')
     {
@@ -62,8 +59,8 @@ class Xml
 
     /**
      * 编码XML数据
-     * @param  mixed $data 被编码的数据
-     * @param  array $config 数据配置项
+     * @param mixed $data 被编码的数据
+     * @param array $config 数据配置项
      * @return string 编码后的XML数据
      */
     public static function encode($data, array $config = [])
@@ -78,10 +75,10 @@ class Xml
 
     /**
      * 数据XML解码
-     * @param  SimpleXMLElement $xml xml对象
-     * @param  array $data 解码后的数据
-     * @param  string $item 数字索引时的节点名称
-     * @param  string $id 数字索引key转换为的属性名
+     * @param SimpleXMLElement $xml xml对象
+     * @param array $data 解码后的数据
+     * @param string $item 数字索引时的节点名称
+     * @param string $id 数字索引key转换为的属性名
      */
     private static function xml2data(SimpleXMLElement $xml, &$data, $item = 'item', $id = 'id')
     {
@@ -103,9 +100,9 @@ class Xml
 
     /**
      * 解码XML数据
-     * @param  string $str XML字符串
-     * @param  boolean $assoc 是否转换为数组，默认为true
-     * @param  array $config 数据配置项
+     * @param string $str XML字符串
+     * @param boolean $assoc 是否转换为数组，默认为true
+     * @param array $config 数据配置项
      * @return mixed  解码后的XML数据
      */
     public static function decode($str, $assoc = true, array $config = [])

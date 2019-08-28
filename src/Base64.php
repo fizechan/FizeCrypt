@@ -6,6 +6,7 @@ use Exception;
 
 /**
  * Base64编码解码类
+ * @package fize\crypt
  */
 class Base64
 {
