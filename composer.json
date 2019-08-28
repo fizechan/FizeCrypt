@@ -9,8 +9,11 @@
         }
     ],
     "require": {
-		"php": ">=7.0.0"
-	},
+		"php": ">=5.4.0",
+        "ext-iconv": "*",
+        "ext-json": "*",
+        "ext-simplexml": "*"
+    },
 	"autoload": {
         "psr-4": {
             "fize\\crypt\\": "src"
