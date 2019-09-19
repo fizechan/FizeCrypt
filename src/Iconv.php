@@ -1,4 +1,4 @@
-<?php
+<?php /** @noinspection PhpComposerExtensionStubsInspection */
 
 namespace fize\crypt;
 
@@ -83,6 +83,7 @@ class Iconv
      * @param string $type input_encoding、output_encoding、internal_encoding
      * @param string $charset 字符集。
      * @return bool 成功时返回 TRUE， 或者在失败时返回 FALSE。
+     * @deprecated 自PHP5.6开始该方法已弃用
      */
     public static function setEncoding($type, $charset)
     {
@@ -172,6 +173,7 @@ class Iconv
      * @param string $str 待处理字符串
      * @param string $direction 方向 WIN_UTF8_2_GBK,WIN_GBK_2_UTF8
      * @return string 处理后字符串
+     * @deprecated PHP7中已对中文乱码进行了处理，该方法将废弃
      */
     public static function serialize($str, $direction)
     {
@@ -189,6 +191,7 @@ class Iconv
      * 方向 WIN_UTF8_2_GBK
      * @param string $str 待处理字符串
      * @return string
+     * @deprecated PHP7中已对中文乱码进行了处理，该方法将废弃
      */
     public static function winUtf8ToGbk($str)
     {
@@ -199,6 +202,7 @@ class Iconv
      * 方向 WIN_GBK_2_UTF8
      * @param string $str 待处理字符串
      * @return string
+     * @deprecated PHP7中已对中文乱码进行了处理，该方法将废弃
      */
     public static function winGbkToUtf8($str)
     {

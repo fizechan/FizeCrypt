@@ -1,4 +1,7 @@
 <?php
+/**
+ * 测试Base64注释
+ */
 
 namespace fize\crypt;
 
