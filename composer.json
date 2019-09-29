@@ -1,6 +1,6 @@
 {
     "name": "fize/crypt",
-    "description": "various encoding and decoding class libraries. produced by FizeChan.",
+    "description": "various encoding and decoding class libraries.",
     "license": "Apache-2.0",
     "authors": [
         {
