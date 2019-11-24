@@ -20,7 +20,7 @@ class XmlTest extends TestCase
     public function testEncode()
     {
         $string1 = Xml::encode($this->array);
-        $this->assertIsString($string1);
+        self::assertIsString($string1);
         echo $string1;
         return $string1;
     }
@@ -32,6 +32,6 @@ class XmlTest extends TestCase
     public function testDecode($string)
     {
         $array = Xml::decode($string);
-        $this->assertEquals($array, $this->array);
+        self::assertEquals($array, $this->array);
     }
 }

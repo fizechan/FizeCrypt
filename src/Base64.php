@@ -1,22 +1,19 @@
 <?php
-/**
- * 测试Base64注释
- */
 
 namespace fize\crypt;
 
 use Exception;
 
 /**
- * Base64编码解码类
- * @package fize\crypt
+ * Base64 编码解码类
  */
 class Base64
 {
     /**
+     * Base64 解码
      * @param string $data 待解码字符串
      * @param bool $strict 是否忽略无法识别的字符
-     * @return string 返回string
+     * @return string
      * @throws Exception
      */
     public static function decode($data, $strict = false)
@@ -30,7 +27,7 @@ class Base64
     }
 
     /**
-     * Base64编码
+     * Base64 编码
      * @param string $data 待编码字符串
      * @return string
      * @throws Exception

@@ -11,7 +11,9 @@ class Utf8Test extends TestCase
     {
         $str0 = '123456你好！';
         $str1 = Utf8::encode($str0);
+        var_dump($str1);
         $str2 = Utf8::decode($str1);
+        var_dump($str2);
         self::assertEquals($str0, $str2);
     }
 

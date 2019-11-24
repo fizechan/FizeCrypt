@@ -5,7 +5,6 @@ namespace fize\crypt;
 
 /**
  * UTF-8编码解码类
- * @package fize\crypt
  */
 class Utf8
 {

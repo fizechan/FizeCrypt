@@ -6,13 +6,12 @@ namespace fize\crypt;
 use SimpleXMLElement;
 
 /**
- * XML编码解码类
- * @package fize\crypt
+ * XML 编码解码类
  */
 class Xml
 {
     /**
-     * XML数据默认配置项
+     * XML 数据默认配置项
      * @var array
      */
     private static $config = [
@@ -30,11 +29,11 @@ class Xml
     }
 
     /**
-     * 数据XML编码
-     * @param SimpleXMLElement $xml xml对象
+     * 数据 XML 编码
+     * @param SimpleXMLElement $xml xml 对象
      * @param mixed $data 数据
      * @param string $item 数字索引时的节点名称
-     * @param string $id 数字索引key转换为的属性名
+     * @param string $id 数字索引 key 转换为的属性名
      */
     private static function data2xml(SimpleXMLElement $xml, $data, $item = 'item', $id = 'id')
     {
@@ -59,7 +58,7 @@ class Xml
     }
 
     /**
-     * 编码XML数据
+     * 编码 XML 数据
      * @param mixed $data 被编码的数据
      * @param array $config 数据配置项
      * @return string 编码后的XML数据
@@ -75,11 +74,11 @@ class Xml
     }
 
     /**
-     * 数据XML解码
-     * @param SimpleXMLElement $xml xml对象
+     * 数据 XML 解码
+     * @param SimpleXMLElement $xml xml 对象
      * @param array $data 解码后的数据
      * @param string $item 数字索引时的节点名称
-     * @param string $id 数字索引key转换为的属性名
+     * @param string $id 数字索引 key 转换为的属性名
      */
     private static function xml2data(SimpleXMLElement $xml, &$data, $item = 'item', $id = 'id')
     {
@@ -100,11 +99,11 @@ class Xml
     }
 
     /**
-     * 解码XML数据
-     * @param string $str XML字符串
-     * @param boolean $assoc 是否转换为数组，默认为true
+     * 解码 XML 数据
+     * @param string $str XML 字符串
+     * @param boolean $assoc 是否转换为数组，默认为 true
      * @param array $config 数据配置项
-     * @return mixed  解码后的XML数据
+     * @return SimpleXMLElement|array  解码后的 XML 数据
      */
     public static function decode($str, $assoc = true, array $config = [])
     {

@@ -1,7 +1,7 @@
 {
     "name": "fize/crypt",
     "description": "各式各样的编码解码类库",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "authors": [
         {
             "name": "FizeChan",
@@ -13,6 +13,9 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0.0"
+    },
+    "suggest": {
+        "ext-json": "*"
     },
 	"autoload": {
         "psr-4": {
