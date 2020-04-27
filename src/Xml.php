@@ -1,5 +1,4 @@
 <?php
-/** @noinspection PhpComposerExtensionStubsInspection */
 
 namespace fize\crypt;
 
@@ -7,6 +6,7 @@ use SimpleXMLElement;
 
 /**
  * XML 编码解码类
+ * @todo 非UTF-8编码问题
  */
 class Xml
 {

@@ -4,7 +4,7 @@
 use fize\crypt\Base64;
 use PHPUnit\Framework\TestCase;
 
-class Base64Test extends TestCase
+class TestBase64 extends TestCase
 {
 
     public function testDecode()

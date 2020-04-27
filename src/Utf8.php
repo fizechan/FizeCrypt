@@ -1,10 +1,9 @@
 <?php
 
-
 namespace fize\crypt;
 
 /**
- * UTF-8编码解码类
+ * UTF-8 编码解码
  */
 class Utf8
 {

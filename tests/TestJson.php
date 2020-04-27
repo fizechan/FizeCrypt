@@ -4,7 +4,7 @@
 use fize\crypt\Json;
 use PHPUnit\Framework\TestCase;
 
-class JsonTest extends TestCase
+class TestJson extends TestCase
 {
 
     public function testLastError()

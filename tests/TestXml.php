@@ -4,7 +4,7 @@
 use fize\crypt\Xml;
 use PHPUnit\Framework\TestCase;
 
-class XmlTest extends TestCase
+class TestXml extends TestCase
 {
 
     private $array = [

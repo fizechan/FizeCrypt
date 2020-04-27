@@ -3,15 +3,15 @@
 namespace fize\crypt;
 
 /**
- * URL 编码类
+ * URL 编码解码
  */
 class Url
 {
 
     /**
      * 解析 URL，返回其组成部分
-     * @param string $url 要解析的 URL。无效字符将使用 _ 来替换。
-     * @param int $component 指定返回的部分
+     * @param string $url       要解析的 URL。无效字符将使用 _ 来替换。
+     * @param int    $component 指定返回的部分
      * @return array|string|int
      */
     public static function parse($url, $component = -1)

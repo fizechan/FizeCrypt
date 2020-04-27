@@ -4,7 +4,7 @@
 use fize\crypt\Url;
 use PHPUnit\Framework\TestCase;
 
-class UrlTest extends TestCase
+class TestUrl extends TestCase
 {
 
     public function testParse()

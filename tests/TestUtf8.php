@@ -4,7 +4,7 @@
 use fize\crypt\Utf8;
 use PHPUnit\Framework\TestCase;
 
-class Utf8Test extends TestCase
+class TestUtf8 extends TestCase
 {
 
     public function testDecode()
