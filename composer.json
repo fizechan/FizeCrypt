@@ -1,28 +1,28 @@
 {
-  "name": "fize/crypt",
-  "description": "各式各样的编码解码类库",
-  "license": "MIT",
   "authors": [
     {
       "name": "FizeChan",
       "email": "chenfengzhan@qq.com"
     }
   ],
+  "autoload": {
+    "psr-4": {
+      "fize\\crypt\\": "src"
+    }
+  },
+  "description": "各式各样的编码解码类库",
+  "license": "MIT",
+  "name": "fize/crypt",
   "require": {
     "php": ">=5.5"
   },
   "require-dev": {
     "ext-json": "*",
     "ext-simplexml": "*",
-    "phpunit/phpunit": "~9.1"
+    "phpunit/phpunit": "~9.1.0"
   },
   "suggest": {
     "ext-json": "*",
     "ext-simplexml": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "fize\\crypt\\": "src"
-    }
   }
 }
