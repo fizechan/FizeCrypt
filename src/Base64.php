@@ -16,7 +16,7 @@ class Base64
      * @return string
      * @throws Exception
      */
-    public static function decode($data, $strict = false)
+    public static function decode(string $data, bool $strict = false): string
     {
         $result = base64_decode($data, $strict);
         if (false === $result) {
@@ -31,7 +31,7 @@ class Base64
      * @return string
      * @throws Exception
      */
-    public static function encode($data)
+    public static function encode(string $data): string
     {
         $result = base64_encode($data);
         if (false === $result) {
